@@ -4,7 +4,7 @@
 'use strict';
 
 function getInput() {
-    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.");
     return prompt();
 }
 function randomPlay() {
@@ -42,16 +42,16 @@ function getWinner(playerMove,computerMove) {
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
     if(playerMove === computerMove){
-        winner = 'tie'
+        winner = 'tie';
     }
     else{
         if(playerMove === 'rock'){
             switch(computerMove){
                 case 'paper':
-                    winner = 'computer'
+                    winner = 'computer';
                     break;
                 case 'scissors':    
-                    winner = 'player'
+                    winner = 'player';
                     break;
                 default:
                     winner = 'INVALID COMPUTER MOVE';
@@ -109,7 +109,7 @@ function playToFive() {
             default:
                 console.log('An Error Occured');
         }
-        console.log('The Player chose ' + pMove + ' while the Computer chose ' + cMove)
+        console.log('The Player chose ' + pMove + ' while the Computer chose ' + cMove);
         console.log('The score is currently P: ' + playerWins + ' to C: ' + computerWins);
     }
     return [playerWins, computerWins];
@@ -134,7 +134,7 @@ function playToX(x) {
             default:
                 console.log('An Error Occured');
         }
-        console.log('The Player chose ' + pMove + ' while the Computer chose ' + cMove)
+        console.log('The Player chose ' + pMove + ' while the Computer chose ' + cMove);
         console.log('The score is currently P: ' + playerWins + ' to C: ' + computerWins);
     }
     return [playerWins, computerWins];
